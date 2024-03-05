@@ -1,0 +1,9 @@
+---
+id: home
+blueprint: pages
+title: Home
+template: home
+author: 095d9275-f54a-40d1-81a1-067635a72460
+updated_by: 095d9275-f54a-40d1-81a1-067635a72460
+updated_at: 1709672875
+---

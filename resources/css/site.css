@@ -1,0 +1,27 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This is all you. */
+
+* {
+    @apply scroll-smooth antialiased;
+}
+
+body {
+    @apply min-h-dvh -bg-background -text-text container max-w-screen-md;
+    font-family: "Inter Tight", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply text-balance;
+}
+
+p {
+    @apply text-pretty;
+}
