@@ -16,15 +16,17 @@ return [
     'sites' => [
 
         'default' => [
-            'name' => config('app.name'),
-            'locale' => 'en_US',
+            'name' => 'Turkish',
+            'locale' => 'tr_TR',
             'url' => '/',
+            'direction' => 'ltr',
         ],
 
         'en' => [
-            'name' => 'en',
+            'name' => 'English',
             'locale' => 'en_US',
             'url' => '/en/',
+            'direction' => 'ltr',
         ],
 
     ],
