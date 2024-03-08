@@ -9,8 +9,8 @@
 }
 
 body {
-    @apply min-h-dvh -bg-background -text-text container max-w-screen-md;
-    font-family: "Inter Tight", sans-serif;
+    @apply min-h-dvh bg-white text-dark container max-w-screen-md;
+    font-family: "Archivo", sans-serif;
 }
 
 h1,
@@ -24,4 +24,12 @@ h6 {
 
 p {
     @apply text-pretty;
+}
+
+li {
+    @apply list-none;
+}
+
+::selection {
+    background-color: #fff6c0;
 }
