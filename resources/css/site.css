@@ -9,7 +9,7 @@
 }
 
 body {
-    @apply min-h-dvh bg-white text-dark container max-w-screen-md;
+    @apply min-h-dvh bg-white container max-w-screen-md;
     font-family: "Archivo", sans-serif;
 }
 
