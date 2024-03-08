@@ -21,5 +21,11 @@ return [
             'url' => '/',
         ],
 
+        'en' => [
+            'name' => 'en',
+            'locale' => 'en_US',
+            'url' => '/en/',
+        ],
+
     ],
 ];
