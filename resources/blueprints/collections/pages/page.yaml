@@ -12,6 +12,7 @@ tabs:
               required: true
               validate:
                 - required
+              localizable: false
           -
             handle: content
             field:
@@ -29,6 +30,14 @@ tabs:
               type: slug
               localizable: true
               validate: 'max:200'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              from: title
+              generate: true
+              show_regenerate: true
+              hide_display: false
           -
             handle: parent
             field:
