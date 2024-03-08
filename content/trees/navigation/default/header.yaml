@@ -1,0 +1,9 @@
+tree:
+  -
+    id: 03f55667-0126-4373-a009-3a2d76dab1f8
+    title: home
+    url: /
+  -
+    id: da439487-d6eb-4940-b95e-ddc5534d839e
+    title: blog
+    url: /blog
