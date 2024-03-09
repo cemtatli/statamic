@@ -5,6 +5,8 @@ sites:
 propagate: false
 template: templates/writing/show
 layout: layout
+taxonomies:
+  - tags
 revisions: false
 route: '/writing/{slug}'
 sort_dir: asc

@@ -12,6 +12,7 @@ tabs:
               required: true
               validate:
                 - required
+              localizable: false
   sidebar:
     display: Sidebar
     sections:
@@ -25,3 +26,16 @@ tabs:
               validate:
                 - required
                 - 'max:200'
+              localizable: false
+          -
+            handle: color
+            field:
+              allow_any: true
+              type: color
+              display: Color
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

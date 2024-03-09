@@ -9,7 +9,7 @@
 }
 
 body {
-    @apply min-h-dvh bg-white container max-w-screen-md;
+    @apply min-h-dvh bg-white container max-w-screen-md text-lg;
     font-family: "Archivo", sans-serif;
 }
 
@@ -26,10 +26,34 @@ p {
     @apply text-pretty;
 }
 
-li {
-    @apply list-none;
-}
-
 ::selection {
     background-color: #fff6c0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+span[data-state="epigra"] {
+    @apply hover:cursor-epigra hover:mix-blend-multiply hover:text-[#ff4e00] transition-colors duration-500 hover:underline hover:underline-offset-4 selection:bg-transparent hover:animate-tada;
+}
+
+section {
+    @apply my-8;
 }
