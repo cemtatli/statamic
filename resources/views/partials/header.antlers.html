@@ -2,7 +2,9 @@
     <nav class="flex items-center justify-between w-full">
         <ul class="flex gap-x-5 justify-between">
             {{ nav:header }}
-                <li><a aria-label="{{ title }}" href="{{ url }}">{{ title }}</a></li>
+                <li><a aria-label="{{ title }}" href="{{ url }}"
+                        class="{{ is_current ? 'underline underline-offset-2' : '' }}">{{ title }}</a>
+                </li>
             {{ /nav:header }}
         </ul>
 

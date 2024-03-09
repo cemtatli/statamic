@@ -50,7 +50,7 @@ p {
     background: #555;
 }
 
-span[data-state="epigra"] {
+a[data-state="epigra"] {
     @apply hover:cursor-epigra hover:mix-blend-multiply hover:text-[#ff4e00] transition-colors duration-500 hover:underline hover:underline-offset-4 selection:bg-transparent hover:animate-tada;
 }
 

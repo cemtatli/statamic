@@ -16,18 +16,11 @@ return [
     'sites' => [
 
         'default' => [
-            'name' => 'Turkish',
-            'locale' => 'tr_TR',
+            'name' => 'English',
+            'locale' => 'en_US',
             'url' => '/',
             'direction' => 'ltr',
         ],
-
-        /*         'en' => [
-            'name' => 'English',
-            'locale' => 'en_US',
-            'url' => '/en/',
-            'direction' => 'ltr',
-        ], */
 
     ],
 ];
