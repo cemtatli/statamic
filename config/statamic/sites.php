@@ -22,12 +22,12 @@ return [
             'direction' => 'ltr',
         ],
 
-        'en' => [
+        /*         'en' => [
             'name' => 'English',
             'locale' => 'en_US',
             'url' => '/en/',
             'direction' => 'ltr',
-        ],
+        ], */
 
     ],
 ];
