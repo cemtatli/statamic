@@ -1,23 +1,22 @@
 <section>
     {{ collection:writing paginate="5" as="posts" sort="date:desc" }}
-        <h2 class="text-xl">{{ title }}</h2>
-        {{ if no_results }}
-            <p>Aww, there are no results.</p>
-        {{ /if }}
-        <div class="flex flex-col gap-4 my-5">
-            {{ posts }}
-                <a href="{{ url }}" hreflang="{{ site:short_locale }}"
-                    class="hover:bg-zinc-50 transition-colors p-2 rounded-lg flex flex-col gap-2 duration-300 ease-linear">
-                    <div class="flex gap-4 items-center">
-                        <h3 aria-label="{{ title }}" class="text-zinc-900 whitespace-nowrap truncate">{{ title }}</h3>
-                        <time datetime="{{ date }}" class="text-zinc-400 text-base">{{ date format="F, Y" }}</time>
-                    </div>
-                    <article class=" leading-relaxed text-zinc-600 line-clamp-2">
-                        {{ summary }}
-                    </article>
-                </a>
-            {{ /posts }}
-            {{ partial:partials/pagination }}
-        </div>
+    <h2 class="text-xl">{{ title }}</h2>
+    {{ if no_results }}
+    <p>Aww, there are no results.</p>
+    {{ /if }}
+    <div class="flex flex-col gap-4 my-5">
+        {{ posts }}
+        <a href="{{ url }}" hreflang="{{ site:short_locale }}" class="p-2 rounded-lg flex flex-col gap-2">
+            <div class="flex gap-4 items-center">
+                <h3 aria-label="{{ title }}" class="text-zinc-900 whitespace-nowrap truncate">{{ title }}</h3>
+                <time datetime="{{ date }}" class="text-zinc-400 text-base">{{ date format="F, Y" }}</time>
+            </div>
+            <article class=" leading-relaxed text-zinc-600 line-clamp-2">
+                {{ summary || widont }}
+            </article>
+        </a>
+        {{ /posts }}
+        {{ partial:partials/pagination }}
+    </div>
     {{ /collection:writing }}
 </section>

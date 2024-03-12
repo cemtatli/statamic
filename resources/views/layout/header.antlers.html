@@ -1,0 +1,19 @@
+<header class="h-24 flex items-center">
+    <nav class="flex items-center justify-between w-full">
+        <ul class="flex gap-x-5 justify-between">
+            {{ nav:header }}
+            <li><a aria-label="{{ title }}" href="{{ url }}"
+                    class="{{ is_current ? 'underline underline-offset-2' : '' }}">{{ title }}</a>
+            </li>
+            {{ /nav:header }}
+        </ul>
+
+
+        {{ locales }}
+        {{ if !is_current }}
+        <a href="{{ permalink }}">{{ locale:handle | regex_replace('default', 'tr') }}</a>
+        {{ /if }}
+        {{ /locales }}
+
+    </nav>
+</header>
